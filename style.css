@@ -1,0 +1,203 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Oswald:wght@200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .........logo name */
+.logosection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logosection .logo img {
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.name {
+  align-items: center;
+  text-align: center;
+  color: #a51c30;
+}
+
+.logosection .logo2 img {
+  width: 120px;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+/* ....navigation section...... */
+
+.nav {
+  background: #a51c30;
+  height: 60px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+}
+
+.navigation {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+}
+.list {
+  margin-left: 60px;
+  font-size: 17px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  list-style: none;
+  font-weight: 450;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.notification .banner {
+  height: 100px;
+  width: 80%;
+  color: #a51c30;
+  background: #a51c90;
+}
+
+/*----------------------- service section ----------------------*/
+.serveice-section {
+  margin-top: 100px;
+}
+.serveice-section .service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.serveice-section .service-cards .service-card {
+  background-color: var(--bg-dark-light-2);
+  padding: 40px 50px;
+}
+.serveice-section .service-cards .service-card:nth-child(2) {
+  background-color: var(--primary);
+}
+.serveice-section .service-cards .service-card h1 {
+  font-weight: 600;
+  margin: 20px 0;
+}
+.serveice-section .service-cards .service-card p {
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+.serveice-section .service-cards .service-card .service-btn i {
+  color: var(--primary-light);
+  margin-left: 10px;
+}
+.serveice-section .service-cards .service-card:nth-child(2) .service-btn i {
+  color: var(--white);
+}
+.serveice-section .service-cards .service-card .service-btn button {
+  color: var(--primary-light);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 29px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.serveice-section .service-cards .service-card:nth-child(2) button {
+  color: var(--white);
+}
+
+.service-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.service-stats .left {
+  flex: 1.2;
+  text-align: center;
+}
+.service-stats .left h1 {
+  color: var(--primary-light);
+  font-size: 7rem;
+  font-weight: 900;
+}
+.service-stats .left p {
+  font-size: 2rem;
+  margin-top: -10px;
+  font-weight: 600;
+}
+.service-stats .right {
+  display: flex;
+  gap: 20px;
+  flex: 2;
+  flex-wrap: wrap;
+}
+.service-stats .right .card {
+  background-color: var(--bg-dark-light-2);
+  width: 20rem;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.service-stats .right .card h1 {
+  color: var(--primary-light);
+  font-size: 2.9rem;
+}
+.service-stats .right .card p {
+  color: var(--text-gray);
+  font-size: 17px;
+  padding-top: 5px;
+}
+@media only screen and (max-width: 1045px) {
+  .serveice-section .service-cards .service-card h1 {
+    font-size: 1.5rem;
+  }
+  .serveice-section .service-cards .service-card p {
+    font-size: 1.1rem;
+  }
+  .serveice-section .service-cards .service-card .logo img {
+    width: 40px;
+  }
+  .serveice-section .service-cards {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 808px) {
+  .service-stats {
+    margin: 90px auto;
+    flex-direction: column;
+  }
+  .service-stats .left h1 {
+    font-size: 4rem;
+  }
+  .service-stats .left p {
+    font-size: 1.5rem;
+  }
+  .service-stats .right {
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .service-stats .right .card {
+    background-color: var(--bg-dark-light-2);
+    width: 10rem;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service-stats .right .card h1 {
+    color: var(--primary-light);
+    font-size: 2.9rem;
+  }
+  .service-stats .right .card p {
+    color: var(--text-gray);
+    font-size: 17px;
+    padding-top: 5px;
+  }
+}
